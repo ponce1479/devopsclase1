@@ -1,0 +1,13 @@
+{
+  "name": "aitanas-constructor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E-commerce de materiales y herramientas de construcción — Aitanas Constructor",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
