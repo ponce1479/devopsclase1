@@ -4,9 +4,13 @@ E-commerce estático de materiales y herramientas de construcción, hecho con **
 
 ## Páginas
 
-- `index.html` — Inicio: hero, categorías, catálogo filtrable, ofertas con cuenta atrás, testimonios y newsletter.
+- `index.html` — Inicio: hero, categorías (incluida **Servicios**), catálogo filtrable, servicios profesionales con formulario de presupuesto, ofertas con cuenta atrás, testimonios y newsletter.
 - `producto.html?id=N` — Detalle de producto con galería, especificaciones, cantidad y productos relacionados.
 - `carrito.html` — Carrito persistente con cantidades, eliminación, subtotal, envío gratis y total.
+
+## Servicios
+
+La sección `#servicios` muestra seis servicios profesionales (reformas, albañilería, fontanería, electricidad, pintura y jardinería) definidos en `window.SERVICES` dentro de `js/data.js`. Cada tarjeta abre un modal de presupuesto con el servicio preseleccionado; el envío es una simulación con aviso toast.
 
 ## Estructura
 
@@ -20,9 +24,9 @@ E-commerce estático de materiales y herramientas de construcción, hecho con **
 ├── dist/
 │   └── styles.css         # CSS compilado (generado)
 ├── js/
-│   ├── data.js            # Catálogo de productos y utilidades de formato
+│   ├── data.js            # Catálogo de productos, servicios y utilidades de formato
 │   ├── common.js          # Header, footer, carrito (localStorage), toasts y tarjetas
-│   ├── main.js            # Inicio: filtros y búsqueda
+│   ├── main.js            # Inicio: filtros, búsqueda, servicios y modal de presupuesto
 │   ├── producto.js        # Detalle de producto
 │   └── carrito.js         # Lógica del carrito
 ├── tailwind.config.js

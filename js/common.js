@@ -212,8 +212,8 @@ function headerHTML(active) {
 
         <nav class="hidden items-center gap-7 text-sm font-semibold lg:flex" aria-label="Navegación principal">
           ${nav('inicio', 'Inicio', 'index.html')}
-          ${nav('categorias', 'Categorías', 'index.html#categorias')}
           ${nav('productos', 'Catálogo', 'index.html#productos')}
+          ${nav('servicios', 'Servicios', 'index.html#servicios')}
           <a href="index.html#ofertas" class="flex items-center gap-1 font-semibold ${active === 'ofertas' ? 'text-brand-700' : 'text-brand-600'}">
             Ofertas
             <span class="rounded-full bg-brand-100 px-1.5 py-0.5 text-[10px] font-bold uppercase text-brand-700">-30%</span>
@@ -250,6 +250,7 @@ function headerHTML(active) {
           <a href="index.html" class="rounded-lg px-3 py-2.5 hover:bg-slate-100">Inicio</a>
           <a href="index.html#categorias" class="rounded-lg px-3 py-2.5 hover:bg-slate-100">Categorías</a>
           <a href="index.html#productos" class="rounded-lg px-3 py-2.5 hover:bg-slate-100">Catálogo</a>
+          <a href="index.html#servicios" class="rounded-lg px-3 py-2.5 hover:bg-slate-100">Servicios</a>
           <a href="index.html#ofertas" class="rounded-lg px-3 py-2.5 text-brand-600 hover:bg-brand-50">Ofertas</a>
           <a href="carrito.html" class="rounded-lg px-3 py-2.5 hover:bg-slate-100">Carrito</a>
           <a href="index.html#contacto" class="rounded-lg px-3 py-2.5 hover:bg-slate-100">Contacto</a>
@@ -295,6 +296,7 @@ function footerHTML() {
             <li><a href="index.html#productos" class="transition hover:text-brand-400">Herramientas</a></li>
             <li><a href="index.html#productos" class="transition hover:text-brand-400">Pintura</a></li>
             <li><a href="index.html#productos" class="transition hover:text-brand-400">Baño y cocina</a></li>
+            <li><a href="index.html#servicios" class="transition hover:text-brand-400">Servicios</a></li>
             <li><a href="index.html#ofertas" class="transition hover:text-brand-400">Ofertas</a></li>
           </ul>
         </div>

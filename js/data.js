@@ -190,12 +190,60 @@ window.PRODUCTS = [
   }
 ];
 
+window.SERVICES = [
+  {
+    name: 'Reformas integrales',
+    icon: '🏠',
+    from: 6000,
+    description: 'Reformamos tu vivienda de principio a fin: albañilería, instalaciones y acabados con un único responsable.'
+  },
+  {
+    name: 'Albañilería y obra nueva',
+    icon: '🧱',
+    from: 1200,
+    description: 'Muros, tabiques, solados, enfoscados y pequeñas estructuras ejecutadas con materiales de primera calidad.'
+  },
+  {
+    name: 'Fontanería e instalaciones',
+    icon: '🚿',
+    from: 180,
+    description: 'Instalación y reparación de agua, saneamiento, calefacción y termos, con materiales certificados.'
+  },
+  {
+    name: 'Electricidad',
+    icon: '⚡',
+    from: 150,
+    description: 'Cuadros eléctricos, cableado, iluminación LED y certificados de instalación según normativa.'
+  },
+  {
+    name: 'Pintura y acabados',
+    icon: '🎨',
+    from: 350,
+    description: 'Pintura interior y exterior, pladur, alisado de paredes y soluciones decorativas a medida.'
+  },
+  {
+    name: 'Jardinería y exteriores',
+    icon: '🌿',
+    from: 250,
+    description: 'Diseño de jardines, riego automático, césped artificial, pavimentos y mantenimiento periódico.'
+  }
+];
+
 window.formatPrice = function (value) {
   return new Intl.NumberFormat('es-ES', {
     style: 'currency',
     currency: 'EUR'
   }).format(value);
 };
+
+window.formatPriceShort = function (value) {
+  return new Intl.NumberFormat('es-ES', {
+    style: 'currency',
+    currency: 'EUR',
+    maximumFractionDigits: 0
+  }).format(value);
+};
+
 
 window.findProduct = function (id) {
   return window.PRODUCTS.find(function (p) {
